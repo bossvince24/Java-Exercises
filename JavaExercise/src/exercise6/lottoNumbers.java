@@ -1,6 +1,6 @@
 package exercise6;
 
-//mag gegenerate ka ng 1-49
+//mag gegenerate ka ng 1-49 with no same number
 //
 //Note: Dapat walang duplicate number
 // 

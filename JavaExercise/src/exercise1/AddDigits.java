@@ -1,15 +1,16 @@
 package exercise1;
 
+import java.util.Scanner;
+
 //create a Java Program what will add the digits on a given Integer
 
-import java.util.Scanner;
 
 public class AddDigits {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int num = 0;
+		int num;
 		int sum = 0;
 		
 		Scanner scanner = new Scanner(System.in);
@@ -18,12 +19,11 @@ public class AddDigits {
 		num = scanner.nextInt();
 		
 		while (num > 0) {
-			sum += num % 10;
+			int digit = num % 10;
+			sum += digit;
 			num /= 10;
 		}
-		
-		System.out.println("The sum of the digits is: " + sum);
-
+		System.out.println("Sum of Digit: " + sum);
 	}
 
 }
